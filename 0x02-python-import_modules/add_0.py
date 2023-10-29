@@ -1,14 +1,6 @@
 #!/usr/bin/python3
-def add(a, b):
-    """My addition function
-
-    Args:
-        a: first integer
-        b: second integer
-
-    Returns:
-        The return value. a + b
-    """
-    if __name__ == "__main__":
-
-        return (a + b)
+from add_0 import add
+if __name__ == "main":
+    a = 1
+    b = 2
+    print(f"{a} + {b} = {add(a + b)}")
