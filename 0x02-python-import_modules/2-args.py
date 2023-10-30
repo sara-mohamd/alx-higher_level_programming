@@ -5,6 +5,6 @@ if __name__ == "__main__":
     if count == 0:
         print("0 arguments.")
     elif count > 0:
-        print(f"{count} arguments: ")
+        print(f"{count} arguments:")
         for i in range(1, count + 1):
             print(f"{i}: {argv[i]}")
