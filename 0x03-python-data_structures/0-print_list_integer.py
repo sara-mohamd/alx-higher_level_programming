@@ -3,5 +3,5 @@
 
 # if __name__ == "__main__":
 def print_list_integer(my_list=[]):
-    for i in range(0, 5):
+    for i in range(1, 6):
         print("{:d}".format(i))
