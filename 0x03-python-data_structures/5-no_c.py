@@ -8,5 +8,3 @@ def no_c(my_string):
             if i.upper() != 'C':
                 result += i
         return result
-
-            
