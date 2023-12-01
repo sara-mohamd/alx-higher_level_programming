@@ -4,4 +4,3 @@ def square_matrix_simple(matrix=[]):
     for i in matrix:
         c.append(list(map(lambda i: i**2, i)))
     return c
-
