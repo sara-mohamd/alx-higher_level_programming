@@ -2,5 +2,5 @@
 
 
 def search_replace(my_list, search, replace):
-    c = list(map(lambda x :replace if x == search else x, my_list))
+    c = list(map(lambda x: replace if x == search else x, my_list))
     return c
