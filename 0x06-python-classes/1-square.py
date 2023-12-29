@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""New Updates"""
+"""New Module"""
 
 
 class Square:
