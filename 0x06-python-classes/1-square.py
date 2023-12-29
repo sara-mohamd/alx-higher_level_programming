@@ -4,8 +4,9 @@
 
 
 class Square:
+    """Task"""
+
     def __init__(self, size):
-        
         """
         Private instance attribute
         size (no type/value verification)
