@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
     This function add two numbers:
     a: An integer or float
@@ -8,7 +9,7 @@
 
 def add_integer(a, b=98):
     """
-    Test type  of args
+    Adding type  of args
     otherwise raise TypeError
     """
     if not isinstance(a, (float, int)):
