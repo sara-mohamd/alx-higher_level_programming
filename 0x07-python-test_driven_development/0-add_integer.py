@@ -10,7 +10,6 @@ def add_integer(a, b=98):
     """
     Test type  of args
     otherwise raise TypeError
-    
     """
     if not isinstance(a, (float, int)):
         raise TypeError("a must be an integer")
