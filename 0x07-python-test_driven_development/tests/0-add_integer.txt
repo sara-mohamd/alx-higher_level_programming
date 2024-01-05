@@ -1,0 +1,53 @@
+---------------------------------------
+Test Cases to function adds 2 integers.
+---------------------------------------
+
+import add_integer from 0-add_integer:
+    
+    add_integer = __import__('0-add_integer').add_integer
+
+Test one intger argument:
+    >>> add_integer(1)
+    99
+
+Test zero argument:
+    >>> add_integer(0)
+    98
+
+Test float argument:
+    >>> add_integer(2.5)
+    100
+
+Test one negative float:
+    >>> add_integer(-8)
+    90
+
+Test two integers arg:
+    >>> add_integer(123, 20)
+    143
+
+Test pos + negative:
+    >>> add_integer(-100, 2)
+    -98
+
+Test integer and float:
+    >>> add_integer(99, 4.3)
+    103
+
+Test invalid arg:
+    >>> add_integer('TDD')
+    Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+Test the latter arg:
+    >>> add_integer(4.5, "Sarah")
+    Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+Test both invalid args:
+    >>> add_integer('doctest', 'python')
+    Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
