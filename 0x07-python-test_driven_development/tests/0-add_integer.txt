@@ -1,12 +1,16 @@
----------------------------------------
-Test Cases to function adds 2 integers.
----------------------------------------
 
-import add_integer from 0-add_integer:
-    
-    add_integer = __import__('0-add_integer').add_integer
+The ``0-add_integer`` module
+======================
 
-Test one intger argument:
+Using ``add_integer``
+-------------------
+
+This is 0-add_integer in reStructuredText format.  First import
+``add_integer`` from the ``0-add_integer`` module:
+
+    >>> from 0-add_integer import add_integer
+
+Test one int argument:
     >>> add_integer(1)
     99
 
