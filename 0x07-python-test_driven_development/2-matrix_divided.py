@@ -1,6 +1,7 @@
 #!/usr/bin/python
 """ Q2 """
 
+
 def matrix_divided(matrix, div):
     """..."""
     for row in matrix:
@@ -16,7 +17,8 @@ def matrix_divided(matrix, div):
     elif div == 0:
         raise ZeroDivisionError("div must be a number")
 
-    
+    result = []
     for i in range(len(matrix)):
 
-        print([ round(x/3, 2) for x in matrix[i]], end=" ")
+        result.append([round(x/3, 2) for x in matrix[i]])
+    return result
