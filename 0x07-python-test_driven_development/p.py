@@ -32,4 +32,8 @@ text_indentation = __import__('5-text_indentation').text_indentation
 # cuique tribuens atque hanc, quam dico. Utinam quidem dicerent alium alio \
 # beatiorem! Iam ruinas videres""")
 
-text_indentation("\n")
+# text_indentation("\n")
+
+max_integer = __import__('6-max_integer').max_integer
+
+print(max_integer())
