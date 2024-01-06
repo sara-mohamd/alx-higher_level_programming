@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """ Q2 """
 
 
@@ -20,5 +20,5 @@ def matrix_divided(matrix, div):
     result = []
     for i in range(len(matrix)):
 
-        result.append([round(x/3, 2) for x in matrix[i]])
+        result.append([round(x/div, 2) for x in matrix[i]])
     return result

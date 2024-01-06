@@ -11,5 +11,5 @@ matrix = [
     [1, 2, 3],
     [4, 5, 6]
 ]
-print(matrix_divided([[3, 7], [5, 2]], 0))
+print(matrix_divided())
 
