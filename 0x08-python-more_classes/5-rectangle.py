@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 4th Task """
+""" 5th Task """
 
 
 class Rectangle:
@@ -82,3 +82,9 @@ class Rectangle:
 
     def eval():
         return Rectangle.__str__
+
+    def __del__(self):
+        """
+        While deleting
+        """
+        print("Bye rectangle...")
