@@ -4,12 +4,12 @@
 
 class Rectangle:
     """
-    Create Class methods
+        Create Class methods
     """
 
     def __init__(self, width=0, height=0):
         """
-        Initialie width and height
+            Initialie width and height
         """
 
         self.width = width
@@ -18,14 +18,14 @@ class Rectangle:
     @property
     def width(self):
         """
-        getter
+            getter
         """
         return self.__width
 
     @width.setter
     def width(self, value):
         """
-        setter
+            setter
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -36,13 +36,13 @@ class Rectangle:
     @property
     def height(self):
         """
-        Getter
+            Getter
         """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Setter"""
+        """ Setter """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
