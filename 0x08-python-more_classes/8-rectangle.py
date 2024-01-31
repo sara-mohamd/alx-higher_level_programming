@@ -73,7 +73,7 @@ class Rectangle:
         """
         result = ""
         for _ in range(self.height):
-            result += ( str(self.print_symbol) * self.width) + '\n'
+            result += (str(self.print_symbol) * self.width) + '\n'
         return result.rstrip('\n')
 
     def __repr__(self) -> str:
@@ -84,6 +84,22 @@ class Rectangle:
 
     def eval():
         return Rectangle.__str__
+
+    def bigger_or_equal(rect_1, rect_2):
+        """
+            returns the biggest rectangle based on the area
+        """
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        elif not isinstance(rect_2, Rectangle):
+            raise TypeError('rect_2 must be an instance of Rectangle')
+        elif rect_2.area() == rect_1.area():
+            return rect_1
+        if rect_1.area() >= rect_2.area():
+            return rect_1
+        else:
+            return rect_2
+        # return max(rect_1.area(), rect_2.area())
 
     def __del__(self):
         """
