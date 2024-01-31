@@ -1,10 +1,15 @@
+git clone https://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@github.com/sara-mohamd/alx-higher_level_programming.git
+
+pip install flake8==<2.11.0>
+
+
 #!/usr/bin/python3
-""" 2nd task """
+"""2ed Task"""
 
 
 class Rectangle:
     """
-    class with methods and instance attributes
+    Create Class methods
     """
 
     def __init__(self, width=0, height=0):
@@ -17,36 +22,42 @@ class Rectangle:
 
     @property
     def width(self):
-        """
-        @getter
-        """
+        """width getter"""
+
         return self.__width
 
     @width.setter
     def width(self, value):
-        """
-           Setter
-        """
-        if type(value) is not int:
+        """width setter"""
+
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif value < 0:
-            raise ValueError("width must be >= 0")
+        elif not (value > 0):
+            raise TypeError("width must be >= 0")
+
         self.__width = value
 
     @property
     def height(self):
-        """
-        @getter
-        """
+        """Getter"""
+
         return self.__height
 
     @height.setter
     def height(self, value):
-        """
-           Setter
-        """
-        if type(value) is not int:
+        """Setter"""
+
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif value < 0:
-            raise ValueError("height must be >= 0")
+        elif not (value > 0):
+            raise TypeError("height must be >= 0")
         self.__height = value
+'''
+    def __dict__(self):
+        """inform about class attribute"""
+
+        return (
+            f"_Rectangle__height: {self.__height},"
+            f"_Rectangle__width: {self.__width}"
+        )
+'''
