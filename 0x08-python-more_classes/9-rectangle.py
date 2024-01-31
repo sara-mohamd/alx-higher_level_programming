@@ -107,7 +107,7 @@ class Rectangle:
         """
             returns a new Rectangle instance
         """
-        return Rectangle(size, size)
+        return cls(size, size)
 
     def __del__(self):
         """
