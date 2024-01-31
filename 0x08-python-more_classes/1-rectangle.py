@@ -12,12 +12,12 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
-    
+
     @property
     def width(self):
         """width getter"""
         return self.width
-    
+
     @width.setter
     def width(self, value):
         """width setter"""
@@ -42,4 +42,3 @@ class Rectangle:
             raise TypeError("height must be >= 0")
         else:
             self.__height = value
-
