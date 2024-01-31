@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""2ed Task"""
+""" 2ed Task """
 
 
 class Rectangle:
