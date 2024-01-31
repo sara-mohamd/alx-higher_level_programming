@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-"""New Empty Class"""
+""" 1st task """
 
 
 class Rectangle:
-    """Empty Rectangle"""
-    ...
+    """
+    empty class
+    """
+
+    pass
