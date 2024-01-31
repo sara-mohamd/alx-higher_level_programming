@@ -1,8 +1,3 @@
-git clone https://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@github.com/sara-mohamd/alx-higher_level_programming.git
-
-pip install flake8==<2.11.0>
-
-
 #!/usr/bin/python3
 """2ed Task"""
 
@@ -52,12 +47,3 @@ class Rectangle:
         elif not (value > 0):
             raise TypeError("height must be >= 0")
         self.__height = value
-'''
-    def __dict__(self):
-        """inform about class attribute"""
-
-        return (
-            f"_Rectangle__height: {self.__height},"
-            f"_Rectangle__width: {self.__width}"
-        )
-'''
