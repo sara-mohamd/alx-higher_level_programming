@@ -1,0 +1,31 @@
+the ``1-my_list`` module
+========================
+
+Using ``MyList``
+------------
+
+    >>> MyList = __import__('1-my_list').MyList
+    >>> my_list = MyList()
+
+No arg:
+    >>> my_list.append()
+    Traceback (most recent call last):
+        ...
+    TypeError: list.append() takes exactly one argument (0 given)
+
+adding random inputs:
+    >>> my_list.append('sara')
+    >>> my_list.append(11)
+    >>> my_list.append('30')
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+        ...
+    TypeError: '<' not supported between instances of 'int' and 'str'
+
+
+adding int args:
+    >>> my_list.append(1)
+    >>> my_list.append(13)
+    >>> my_list.append(2)
+    >>> my_list.print_sorted()
+    [1, 2, 13]
