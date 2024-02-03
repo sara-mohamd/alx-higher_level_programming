@@ -7,36 +7,39 @@ Using ``MyList``
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
 
+Empty list:
+	>>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
 appending no args:
     >>> my_list.append()
     Traceback (most recent call last):
         ...
     TypeError: list.append() takes exactly one argument (0 given)
 
-Empty list:
-	>>> my_list = MyList()
-    >>> my_list.print_sorted()
-    []
 
 adding numbers:
     >>> my_list = MyList()
     >>> my_list.append(1)
     >>> my_list.append(2)
     >>> my_list.append(3)
+    >>> my_list.append(4)
     >>> print(my_list)
-    [1, 2, 3]
+    [1, 2, 3, 4]
     >>> my_list.print_sorted()
-    [1, 2, 3]
+    [1, 2, 3, 4]
 
 Reversed:
     >>> my_list = MyList()
+    >>> my_list.append(4)
     >>> my_list.append(3)
     >>> my_list.append(2)
     >>> my_list.append(1)
     >>> print(my_list)
-    [3, 2, 1]
+    [4, 3, 2, 1]
     >>> my_list.print_sorted()
-    [1, 2, 3]
+    [1, 2, 3, 4]
 
 Negative numbers:
     >>> my_list = MyList()
