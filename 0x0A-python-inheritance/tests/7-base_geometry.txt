@@ -40,3 +40,9 @@ Invalid args:
     Traceback (most recent call last):
         ...
     TypeError: height must be an integer
+
+Float arg:
+    >>> bg.integer_validator('Float', 2.5)
+    Traceback (most recent call last):
+        ...
+    TypeError: Float must be an integer
