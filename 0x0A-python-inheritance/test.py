@@ -5,4 +5,4 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 bg = BaseGeometry()
 
 
-bg.integer_validator('Float', 2.5)
+bg.integer_validator('Float', 'C')
