@@ -47,6 +47,7 @@ Float arg:
         ...
     TypeError: Float must be an integer
 
+
 Char args:
     >>> bg.integer_validator('sara', 'C')
     Traceback (most recent call last):
