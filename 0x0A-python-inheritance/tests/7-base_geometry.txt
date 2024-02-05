@@ -53,3 +53,10 @@ Char args:
     Traceback (most recent call last):
         ...
     TypeError: sara must be an integer
+
+Area Exeption:
+	>>> BG = BaseGeometry()
+	>>> BG.area()
+	Traceback (most recent call last):
+	    ...
+	Exception: area() is not implemented
