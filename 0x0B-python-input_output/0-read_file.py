@@ -3,5 +3,8 @@
 
 
 def read_file(filename=""):
+    """
+    Function that reads a text file and print its content
+    """
     with open(filename) as file:
         print(file.read(), end="")
