@@ -28,7 +28,8 @@ class Person:
 
 
 obj = Person()
-Person.x = 15
+obj.x = 15
 if hasattr(obj, 'x'):
     print(getattr(obj, 'x'))
 
+# print(obj[x])
