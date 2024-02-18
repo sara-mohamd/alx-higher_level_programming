@@ -94,6 +94,7 @@ class Rectangle(Base):
         for i in range(self.__height):
             print('#' * self.__width)
 
+    """ Task 6 """
     def __str__(self):
         """ str representation """
         return f"[Rectangle] ({self.id}) "\
