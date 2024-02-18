@@ -88,7 +88,13 @@ class Rectangle(Base):
         """ Calc area """
         return (self.__width * self.__height)
 
+    """ Task 5"""
     def display(self):
         """ print shape # """
         for i in range(self.__height):
             print('#' * self.__width)
+
+    def __str__(self):
+        """ str representation """
+        return f"[Rectangle] ({self.id}) "\
+            f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
