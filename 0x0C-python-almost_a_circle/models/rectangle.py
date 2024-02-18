@@ -90,5 +90,5 @@ class Rectangle(Base):
 
     def display(self):
         """ print shape # """
-        for i in range(self.__height + 1):
+        for i in range(self.__height):
             print('#' * self.__width)
