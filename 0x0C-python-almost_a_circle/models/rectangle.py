@@ -99,3 +99,6 @@ class Rectangle(Base):
         """ str representation """
         return f"[Rectangle] ({self.id}) "\
             f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
+
+    """ Task 7 """
+    
