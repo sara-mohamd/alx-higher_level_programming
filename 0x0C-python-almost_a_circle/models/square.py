@@ -12,7 +12,16 @@ class Square(Rectangle):
         """ Constructor """
         super().__init__(width=size, height=size, x=x, y=y, id=id)
 
-
     def __str__(self):
         """ str representation """
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+
+    @property
+    def size(self):
+        """ get """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """ Setter """
+        self.width = value
