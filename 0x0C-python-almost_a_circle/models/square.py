@@ -38,8 +38,7 @@ class Square(Rectangle):
         """
         if args:
             #       Don't forget pycodestyle
-            for arg, attr in zip(args, ['id', '_Square__size',
-                                        '_Rectangle__x', '_Rectangle__y']):
+            for arg, attr in zip(args, ['id', 'size', 'x', 'y']):
                 setattr(self, attr, arg)
         elif kwargs:
             for key, value in kwargs.items():
