@@ -137,6 +137,10 @@ class Rectangle(Base):
         __dict = {}
         for key, val in self.__dict__.items():
             k = key.split("__")[-1]
+            """
+            key = _Rectangle__width so split("__")
+            and take the last parameter save it in (k)
+            """
             __dict[k] = val
         return __dict
         # return self.__dict__
