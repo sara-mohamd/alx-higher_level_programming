@@ -108,8 +108,8 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) "\
             f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
 
-    """ Task 8 """
-    def update(self, *args):
+    """ Task 8 & 9"""
+    def update(self, *args, **kwargs):
         """
         Update the rectangle
         1st arg (id)
@@ -118,6 +118,7 @@ class Rectangle(Base):
         4th arg (x)
         5th arg (y)
         "no-keyword argument"
+        **kwargs must be skipped if *args exists and is not empty
         """
         if args:
             #       Don't forget pycodestyle
@@ -125,3 +126,6 @@ class Rectangle(Base):
                                         '_Rectangle__height',
                                         '_Rectangle__x', '_Rectangle__y']):
                 setattr(self, attr, arg)
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
