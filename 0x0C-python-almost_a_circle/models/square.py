@@ -50,9 +50,8 @@ class Square(Rectangle):
         __dict['size'] = __dict['width']
         del __dict["width"], __dict["height"]
         return __dict
-        #_dict = {}
+        # _dict = {}
         # for key, val in self.__dict__.items():
         #     k = key.split('__')[-1]
         #     _dict[k] = val
         # return _dict
-
