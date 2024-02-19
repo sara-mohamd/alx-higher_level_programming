@@ -107,3 +107,21 @@ class Rectangle(Base):
         """ str representation """
         return f"[Rectangle] ({self.id}) "\
             f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
+
+    """ Task 8 """
+    def update(self, *args):
+        """
+        Update the rectangle
+        1st arg (id)
+        2nd arg (width)
+        3rd arg (height)
+        4th arg (x)
+        5th arg (y)
+        "no-keyword argument"
+        """
+        if args:
+            #       Don't forget pycodestyle
+            for arg, attr in zip(args, ['id', '_Rectangle__width',
+                                        '_Rectangle__height',
+                                        '_Rectangle__x', '_Rectangle__y']):
+                setattr(self, attr, arg)
