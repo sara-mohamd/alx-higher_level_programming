@@ -122,9 +122,8 @@ class Rectangle(Base):
         """
         if args:
             #       Don't forget pycodestyle
-            for arg, attr in zip(args, ['id', '_Rectangle__width',
-                                        '_Rectangle__height',
-                                        '_Rectangle__x', '_Rectangle__y']):
+            for arg, attr in zip(args, ['id', 'width',
+                                        'height', 'x', 'y']):
                 setattr(self, attr, arg)
         elif kwargs:
             for key, value in kwargs.items():
@@ -135,6 +134,9 @@ class Rectangle(Base):
         that returns the dictionary representation of a Rectangle
         return a json string
         """
-        # __dict = {}
-        # for key, val in self.__dict__.items():
-        return self.__dict__
+        __dict = {}
+        for key, val in self.__dict__.items():
+            k = key.split("__")[-1]
+            __dict[k] = val
+        return __dict[-1:]
+        # return self.__dict__
