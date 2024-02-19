@@ -138,5 +138,5 @@ class Rectangle(Base):
         for key, val in self.__dict__.items():
             k = key.split("__")[-1]
             __dict[k] = val
-        return __dict[-1:]
+        return __dict
         # return self.__dict__
