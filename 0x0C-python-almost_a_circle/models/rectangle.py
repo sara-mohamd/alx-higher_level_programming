@@ -88,10 +88,18 @@ class Rectangle(Base):
         """ Calc area """
         return (self.__width * self.__height)
 
-    """ Task 5"""
+    # Task 5 & 7
     def display(self):
-        """ print shape # """
+        """
+        Print Rectangle instance
+        with character (#)
+        Taking care of x and y
+        """
+        for i in range(self.__y):
+            print()
+
         for i in range(self.__height):
+            print(" " * self.__x, end="")
             print('#' * self.__width)
 
     """ Task 6 """
@@ -99,6 +107,3 @@ class Rectangle(Base):
         """ str representation """
         return f"[Rectangle] ({self.id}) "\
             f"{self.__x}/{self.__y} - {self.__width}/{self.__height}"
-
-    """ Task 7 """
-    
