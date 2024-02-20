@@ -132,7 +132,6 @@ class Rectangle(Base):
     def to_dictionary(self):
         """
         that returns the dictionary representation of a Rectangle
-        return a json string
         """
         __dict = {}
         for key, val in self.__dict__.items():
