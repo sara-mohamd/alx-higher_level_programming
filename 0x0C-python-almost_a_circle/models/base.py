@@ -30,9 +30,11 @@ class Base:
         """
         new_list = []
         file_name = cls.__name__ + ".json"
-        # if list_objs is None:
+        if list_objs is None:
+            with open(file_name, 'w') as file:
+                file.write(json.dump(list_objs))
         #     with open(file_name, 'w') as file:
-        #     return 
+        #     return
         for i in list_objs:
             new_list.append(i.to_dictionary())
         with open(file_name, 'w') as file:
