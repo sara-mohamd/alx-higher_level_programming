@@ -41,4 +41,6 @@ class Base:
         """
         that returns the list of the JSON string representation
         """
+        if not json_string:
+            return []
         return json.loads(json_string)
