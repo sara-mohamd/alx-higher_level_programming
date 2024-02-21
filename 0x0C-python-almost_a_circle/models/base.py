@@ -35,3 +35,10 @@ class Base:
                 new_list.append(i.to_dictionary())
         with open(file_name, 'w') as file:
             file.write(cls.to_json_string(new_list))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        that returns the list of the JSON string representation
+        """
+        return json.loads(json_string)
