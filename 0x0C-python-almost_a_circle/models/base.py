@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ 1st task """
 import json
+from sys import path
 
 
 class Base:
@@ -58,3 +59,12 @@ class Base:
             obj = cls(0)
         obj.update(**dictionary)
         return obj
+
+    @classmethod
+    def load_from_file(cls):
+        """ method returns a list of instances """
+        filename = cls.__name__ + '.json'
+        try:
+            ...
+        except:
+            return []
