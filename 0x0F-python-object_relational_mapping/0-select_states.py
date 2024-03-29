@@ -11,12 +11,15 @@ if __name__ == '__main__':
         with MySQLdb.connect(
             host='localhost',
             port=3306,
-            user=argv[0],
-            passwd=argv[1],
-            db=argv[2]
+            user=argv[1],
+            passwd=argv[2],
+            db=argv[3]
         ) as conn:
             with conn.cursor() as cur:
                 cur.execute('SELECT * From states ORDERED BY  id ASC;')
-        ...
+                data = cur.fetchall()
+                for d in data:
+                    print(d)
+
     except Exception as e:
-        print(e)
+        print("MySQL Error:", e)
