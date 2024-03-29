@@ -16,7 +16,7 @@ if __name__ == "__main__":
             db=argv[3]
     ) as connection:
         with connection.cursor() as cur:
-            cur.execute("SELECT * FROM states WHERE name LIKE 'N%';")
+            cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
         result = cur.fetchall()
         for data in result:
             print(data)
