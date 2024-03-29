@@ -16,7 +16,7 @@ if __name__ == '__main__':
             db=argv[3]
         ) as conn:
             with conn.cursor() as cur:
-                cur.execute('SELECT * From states ORDERED BY  id ASC;')
+                cur.execute('SELECT * From states ORDER BY id ASC;')
                 data = cur.fetchall()
                 for d in data:
                     print(d)
