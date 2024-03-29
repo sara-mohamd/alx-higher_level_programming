@@ -17,9 +17,8 @@ if __name__ == '__main__':
         ) as conn:
             with conn.cursor() as cur:
                 cur.execute('SELECT * From states ORDER BY id ASC;')
-                data = cur.fetchall()
-                for d in data:
-                    print(d)
+                for data in cur.fetchall():
+                    print(data)
 
     except Exception as e:
         print("MySQL Error:", e)

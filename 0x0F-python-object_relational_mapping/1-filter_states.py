@@ -19,8 +19,7 @@ if __name__ == "__main__":
             with connection.cursor() as cur:
                 cur.execute("SELECT * FROM states\
                             WHERE name LIKE 'N%' ORDER BY id ASC;")
-                result = cur.fetchall()
-                for data in result:
+                for data in cur.fetchall():
                     print(data)
     except MySQLdb.Error as e:
         print("MySQL Error:", e)
